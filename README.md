@@ -1,2 +1,5 @@
-# lanrenzhizhao
-懒人智招频道文件分享
+# 懒人支招
+
+## Karabiner Elements配置文件
+
+

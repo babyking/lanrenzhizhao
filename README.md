@@ -2,4 +2,4 @@
 
 ## Karabiner Elements配置文件
 
-
+[lrzz.json](karabiner/lrzz.json)

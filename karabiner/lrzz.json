@@ -91,7 +91,7 @@
       ]
     },
     {
-      "description": "[⌘⌃⌥⇧映射] (S,D,F|L,K,J)=>(⌃,⌥,⌘)单键长按, (ASDF|;LHJ)任意两键或三键组合长按",
+      "description": "ASDF = ;LKJ = ⇧⌃⌥⌘ 单键两键或三键组合长按",
       "manipulators": [
         {
           "from": {
@@ -883,7 +883,7 @@
       ]
     },
     {
-      "description": "长按 G,H,Tab,Backslash => Hyper Key(⌘⌃⌥⇧)",
+      "description": "长按 G,Tab,Backslash => Hyper Key(⌘⌃⌥⇧)",
       "manipulators": [
         {
           "from": {
@@ -905,40 +905,6 @@
             {
               "halt": true,
               "key_code": "g"
-            }
-          ],
-          "to_if_held_down": [
-            {
-              "key_code": "left_command",
-              "modifiers": [
-                "left_shift",
-                "left_option",
-                "left_control"
-              ]
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to_delayed_action": {
-            "to_if_canceled": [
-              {
-                "key_code": "h"
-              }
-            ]
-          },
-          "to_if_alone": [
-            {
-              "halt": true,
-              "key_code": "h"
             }
           ],
           "to_if_held_down": [
@@ -1473,7 +1439,1046 @@
                 "type": "basic"
             }
         ]
+    },
+    {
+      "description": "长按a = Hyper + a",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "a"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "a"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按b = Hyper + b",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "b"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "b"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "b",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按c = Hyper + c",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "c"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "c"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按d = Hyper + d",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "d"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "d"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按e = Hyper + e",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "e"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "e"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按f = Hyper + f",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "f"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "f"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按g = Hyper + g",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "g"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "g"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "g",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按h = Hyper + h",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "h"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "h"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "h",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按i = Hyper + i",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "i"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "i"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按j = Hyper + j",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "j"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "j"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "j",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按k = Hyper + k",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "k"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "k"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "k",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按l = Hyper + l",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "l"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "l"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "l",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按m = Hyper + m",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "m"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "m"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "m",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按n = Hyper + n",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "n"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "n"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "n",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按o = Hyper + o",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "o"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "o"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "o",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按p = Hyper + p",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "p"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "p"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "p",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按q = Hyper + q",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "q"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "q"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "q",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按r = Hyper + r",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "r"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "r"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按s = Hyper + s",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "s"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "s"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按t = Hyper + t",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "t"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "t"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "t",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按u = Hyper + u",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "u"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "u"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按v = Hyper + v",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "v"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "v"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "v",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按w = Hyper + w",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "w"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "w"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按x = Hyper + x",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "x"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "x"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "x",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按y = Hyper + y",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "y"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "y"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "y",
+              "modifiers": [
+                "left_command",
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "长按z = Hyper + z",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "z"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "z"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "z",
+              "modifiers": [
+                "left_command"
+                "left_shift",
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
     }
-
   ]
 }

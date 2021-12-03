@@ -2,7 +2,7 @@
     "title": "懒人支招(https://babyking.github.io/lazytips/)",
     "rules": [
         {
-            "description": "鼠标模拟 left_control+i触发, hjkl移动,空格左击,n右击",
+            "description": "[鼠标模拟] left_control+i触发, hjkl移动,空格左击,n右击",
             "manipulators": [
                 {
                     "from": {
@@ -494,7 +494,7 @@
             ]
         },
         {
-            "description": "修饰键,ASDF = ;LKJ = ⇧⌃⌥⌘ 单键两键或三键组合长按",
+            "description": "[修饰键]⇧⌃⌥⌘ = ASDF = ;LKJ 单键两键或三键组合长按",
             "manipulators": [
                 {
                     "from": {
@@ -1213,7 +1213,7 @@
             ]
         },
         {
-            "description": "Hyper键,长按 G,Tab,Backslash => Hyper Key(⌘⌃⌥⇧)",
+            "description": "[修饰键]Hyper(⌘⌃⌥⇧) = 长按 G,Tab,Backslash",
             "manipulators": [
                 {
                     "from": {
@@ -1313,7 +1313,7 @@
             ]
         },
         {
-            "description": "光标定位(外置键盘),left_control+[hjkl(方向),np(翻页),o(退格)] Shift+Enter(换行)",
+            "description": "[光标定位]外置键盘,left_control+[hjkl(方向),np(翻页),o(退格)] Shift+Enter(换行)",
             "manipulators": [
                 {
                     "from": {
@@ -1416,7 +1416,7 @@
             ]
         },
         {
-            "description": "光标定位,Hyper+[hjkl(方向),np(翻页),o(退格)],opt+hjkl(字方向), Shift+Enter(换行)",
+            "description": "[光标定位]内置键盘,Hyper+[hjkl(方向),np(翻页),o(退格)],opt+hjkl(字方向), Shift+Enter(换行)",
             "manipulators": [
                 {
                     "from": {
@@ -1630,7 +1630,7 @@
             ]
         },
         {
-            "description": "窗口管理,[left_control,hyper]+backslash = 窗口居左居右切换",
+            "description": "[窗口管理][left_control,hyper]+backslash = 窗口居左居右切换",
             "manipulators": [
                 {
                     "conditions": [
@@ -1781,7 +1781,7 @@
             ]
         },
         {
-            "description": "窗口管理,[left_control,hyper]+[ins,del,home,end,pgup,pgdn,up,down,left,right,m,return] = 窗口六边角,四角,最大化,切换屏幕",
+            "description": "[窗口管理][left_control,hyper]+[ins,del,home,end,pgup,pgdn,up,down,left,right,m,return] = 窗口六边角,四角,最大化,切换屏幕",
             "manipulators": [
                 {
                     "from": {
@@ -1903,7 +1903,6 @@
                     },
                     "type": "basic"
                 },
-                
                 {
                     "from": {
                         "key_code": "left_arrow",
@@ -1975,6 +1974,46 @@
                     },
                     "to": {
                         "key_code": "down_arrow",
+                        "modifiers": [
+                            "left_command",
+                            "left_shift",
+                            "left_option",
+                            "left_control"
+                        ]
+                    },
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "m",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_control"
+                            ]
+                        }
+                    },
+                    "to": {
+                        "key_code": "m",
+                        "modifiers": [
+                            "left_command",
+                            "left_shift",
+                            "left_option",
+                            "left_control"
+                        ]
+                    },
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "return_or_enter",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_control"
+                            ]
+                        }
+                    },
+                    "to": {
+                        "key_code": "return_or_enter",
                         "modifiers": [
                             "left_command",
                             "left_shift",
@@ -1984,49 +2023,186 @@
                     },
                     "type": "basic"
                 }
-                ,{
-                  "from": {
-                      "key_code": "m",
-                      "modifiers": {
-                          "mandatory": [
-                              "left_control"
-                          ]
-                      }
-                  },
-                  "to": {
-                      "key_code": "m",
-                      "modifiers": [
-                          "left_command",
-                          "left_shift",
-                          "left_option",
-                          "left_control"
-                      ]
-                  },
-                  "type": "basic"
-              },{
-                "from": {
-                    "key_code": "return_or_enter",
-                    "modifiers": {
-                        "mandatory": [
-                            "left_control"
-                        ]
-                    }
-                },
-                "to": {
-                    "key_code": "return_or_enter",
-                    "modifiers": [
-                        "left_command",
-                        "left_shift",
-                        "left_option",
-                        "left_control"
-                    ]
-                },
-                "type": "basic"
-            }
             ]
         },
         {
-            "description": "单击Shift切换输入法",
+            "description": "[其他]音量控制(外置键盘),PrintScreen,ScrollLock,Pause",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "print_screen"
+                    },
+                    "to": [
+                        {
+                            "key_code": "volume_decrement"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "scroll_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "mute"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "pause"
+                    },
+                    "to": [
+                        {
+                            "key_code": "volume_increment"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "[其他]Del键, [left_control,shift] + Backspace  =  Del",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": {
+                            "mandatory": [
+                                "shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_forward"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_forward"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "[其他]特殊符号输入: left_control + , . \" = 、。",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "quote",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"D01601A3-7A25-464C-BBDD-0316BCE235F4\"'"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "quote",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"D01601A3-7A25-464C-BBDD-0316BCE235F4\"'"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "period",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"A1CD675C-CE63-444C-AE8C-54F58235F283\"'"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "period",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"A1CD675C-CE63-444C-AE8C-54F58235F283\"'"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "comma",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"6F19BF50-AAE9-44F8-95EC-32C91013F6CD\"'"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "comma",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"6F19BF50-AAE9-44F8-95EC-32C91013F6CD\"'"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "[单击]Shift切换输入法",
             "manipulators": [
                 {
                     "from": {
@@ -2073,7 +2249,7 @@
             ]
         },
         {
-            "description": "双击⌘,切换任务(⌘+tab)",
+            "description": "[双击]⌘,切换任务(⌘+tab)",
             "manipulators": [
                 {
                     "conditions": [
@@ -2210,7 +2386,7 @@
             ]
         },
         {
-            "description": "双击⌥,应用内切换窗口(⌘+`)",
+            "description": "[双击]⌥,应用内切换窗口(⌘+`)",
             "manipulators": [
                 {
                     "conditions": [
@@ -2347,7 +2523,7 @@
             ]
         },
         {
-            "description": "双击⌃,chrome等应用内窗口tab切换(^+`)",
+            "description": "[双击]⌃,chrome等应用内窗口tab切换(^+`)",
             "manipulators": [
                 {
                     "conditions": [
@@ -2484,183 +2660,7 @@
             ]
         },
         {
-            "description": "音量控制(外置键盘),PrintScreen,ScrollLock,Pause",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "print_screen"
-                    },
-                    "to": [
-                        {
-                            "key_code": "volume_decrement"
-                        }
-                    ],
-                    "type": "basic"
-                },
-                {
-                    "from": {
-                        "key_code": "scroll_lock"
-                    },
-                    "to": [
-                        {
-                            "key_code": "mute"
-                        }
-                    ],
-                    "type": "basic"
-                },
-                {
-                    "from": {
-                        "key_code": "pause"
-                    },
-                    "to": [
-                        {
-                            "key_code": "volume_increment"
-                        }
-                    ],
-                    "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "Del键, [left_control,shift] + Backspace  =  Del",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "delete_or_backspace",
-                        "modifiers": {
-                            "mandatory": [
-                                "shift"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "delete_forward"
-                        }
-                    ],
-                    "type": "basic"
-                },
-                {
-                    "from": {
-                        "key_code": "delete_or_backspace",
-                        "modifiers": {
-                            "mandatory": [
-                                "left_control"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "delete_forward"
-                        }
-                    ],
-                    "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "特殊符号输入: left_control + , . \" = 、。",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "quote",
-                        "modifiers": {
-                            "mandatory": [
-                                "left_control"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"D01601A3-7A25-464C-BBDD-0316BCE235F4\"'"
-                        }
-                    ],
-                    "type": "basic"
-                },
-                {
-                    "from": {
-                        "key_code": "quote",
-                        "modifiers": {
-                            "mandatory": [
-                                "right_control"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"D01601A3-7A25-464C-BBDD-0316BCE235F4\"'"
-                        }
-                    ],
-                    "type": "basic"
-                },
-                {
-                    "from": {
-                        "key_code": "period",
-                        "modifiers": {
-                            "mandatory": [
-                                "left_control"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"A1CD675C-CE63-444C-AE8C-54F58235F283\"'"
-                        }
-                    ],
-                    "type": "basic"
-                },
-                {
-                    "from": {
-                        "key_code": "period",
-                        "modifiers": {
-                            "mandatory": [
-                                "right_control"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"A1CD675C-CE63-444C-AE8C-54F58235F283\"'"
-                        }
-                    ],
-                    "type": "basic"
-                },
-                {
-                    "from": {
-                        "key_code": "comma",
-                        "modifiers": {
-                            "mandatory": [
-                                "left_control"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"6F19BF50-AAE9-44F8-95EC-32C91013F6CD\"'"
-                        }
-                    ],
-                    "type": "basic"
-                },
-                {
-                    "from": {
-                        "key_code": "comma",
-                        "modifiers": {
-                            "mandatory": [
-                                "right_control"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"6F19BF50-AAE9-44F8-95EC-32C91013F6CD\"'"
-                        }
-                    ],
-                    "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "长按,非hyper映射. o=cmd+space,a=cmd+a",
+            "description": "[长按]非hyper映射. o=cmd+space,a=cmd+a",
             "manipulators": [
                 {
                     "from": {
@@ -2721,7 +2721,7 @@
             ]
         },
         {
-            "description": "长按 X,C,V => 剪切,拷贝,粘贴",
+            "description": "[长按] X,C,V => 剪切,拷贝,粘贴",
             "manipulators": [
                 {
                     "from": {
@@ -2810,7 +2810,7 @@
             ]
         },
         {
-            "description": "长按capslock = right_control, 单击 = escape",
+            "description": "[长按]capslock = right_control, 单击 = escape",
             "manipulators": [
                 {
                     "from": {
@@ -2831,7 +2831,7 @@
             ]
         },
         {
-            "description": "长按空格键 = Shfit,单击映射至空格键",
+            "description": "[长按]空格键 = Shfit,单击映射至空格键",
             "manipulators": [
                 {
                     "from": {
@@ -2857,7 +2857,7 @@
             ]
         },
         {
-            "description": "长按1 = Hyper + 1",
+            "description": "[长按]1 = Hyper + 1",
             "manipulators": [
                 {
                     "from": {
@@ -2897,7 +2897,7 @@
             ]
         },
         {
-            "description": "长按2 = Hyper + 2",
+            "description": "[长按]2 = Hyper + 2",
             "manipulators": [
                 {
                     "from": {
@@ -2937,7 +2937,7 @@
             ]
         },
         {
-            "description": "长按3 = Hyper + 3",
+            "description": "[长按]3 = Hyper + 3",
             "manipulators": [
                 {
                     "from": {
@@ -2977,7 +2977,7 @@
             ]
         },
         {
-            "description": "长按4 = Hyper + 4",
+            "description": "[长按]4 = Hyper + 4",
             "manipulators": [
                 {
                     "from": {
@@ -3017,7 +3017,7 @@
             ]
         },
         {
-            "description": "长按5 = Hyper + 5",
+            "description": "[长按]5 = Hyper + 5",
             "manipulators": [
                 {
                     "from": {
@@ -3057,7 +3057,7 @@
             ]
         },
         {
-            "description": "长按6 = Hyper + 6",
+            "description": "[长按]6 = Hyper + 6",
             "manipulators": [
                 {
                     "from": {
@@ -3097,7 +3097,7 @@
             ]
         },
         {
-            "description": "长按7 = Hyper + 7",
+            "description": "[长按]7 = Hyper + 7",
             "manipulators": [
                 {
                     "from": {
@@ -3137,7 +3137,7 @@
             ]
         },
         {
-            "description": "长按8 = Hyper + 8",
+            "description": "[长按]8 = Hyper + 8",
             "manipulators": [
                 {
                     "from": {
@@ -3177,7 +3177,7 @@
             ]
         },
         {
-            "description": "长按9 = Hyper + 9",
+            "description": "[长按]9 = Hyper + 9",
             "manipulators": [
                 {
                     "from": {
@@ -3217,7 +3217,7 @@
             ]
         },
         {
-            "description": "长按0 = Hyper + 0",
+            "description": "[长按]0 = Hyper + 0",
             "manipulators": [
                 {
                     "from": {
@@ -3257,7 +3257,7 @@
             ]
         },
         {
-            "description": "长按-(hyphen) = Hyper + -(hyphen)",
+            "description": "[长按]-(hyphen) = Hyper + -(hyphen)",
             "manipulators": [
                 {
                     "from": {
@@ -3297,7 +3297,7 @@
             ]
         },
         {
-            "description": "长按 =(equal_sign) = Hyper + =(equal_sign)",
+            "description": "[长按] =(equal_sign) = Hyper + =(equal_sign)",
             "manipulators": [
                 {
                     "from": {
@@ -3337,7 +3337,7 @@
             ]
         },
         {
-            "description": "长按a = Hyper + a",
+            "description": "[长按]a = Hyper + a",
             "manipulators": [
                 {
                     "from": {
@@ -3377,7 +3377,7 @@
             ]
         },
         {
-            "description": "长按b = Hyper + b",
+            "description": "[长按]b = Hyper + b",
             "manipulators": [
                 {
                     "from": {
@@ -3417,7 +3417,7 @@
             ]
         },
         {
-            "description": "长按c = Hyper + c",
+            "description": "[长按]c = Hyper + c",
             "manipulators": [
                 {
                     "from": {
@@ -3457,7 +3457,7 @@
             ]
         },
         {
-            "description": "长按d = Hyper + d",
+            "description": "[长按]d = Hyper + d",
             "manipulators": [
                 {
                     "from": {
@@ -3497,7 +3497,7 @@
             ]
         },
         {
-            "description": "长按e = Hyper + e",
+            "description": "[长按]e = Hyper + e",
             "manipulators": [
                 {
                     "from": {
@@ -3537,7 +3537,7 @@
             ]
         },
         {
-            "description": "长按f = Hyper + f",
+            "description": "[长按]f = Hyper + f",
             "manipulators": [
                 {
                     "from": {
@@ -3577,7 +3577,7 @@
             ]
         },
         {
-            "description": "长按g = Hyper + g",
+            "description": "[长按]g = Hyper + g",
             "manipulators": [
                 {
                     "from": {
@@ -3617,7 +3617,7 @@
             ]
         },
         {
-            "description": "长按h = Hyper + h",
+            "description": "[长按]h = Hyper + h",
             "manipulators": [
                 {
                     "from": {
@@ -3657,7 +3657,7 @@
             ]
         },
         {
-            "description": "长按i = Hyper + i",
+            "description": "[长按]i = Hyper + i",
             "manipulators": [
                 {
                     "from": {
@@ -3697,7 +3697,7 @@
             ]
         },
         {
-            "description": "长按j = Hyper + j",
+            "description": "[长按]j = Hyper + j",
             "manipulators": [
                 {
                     "from": {
@@ -3737,7 +3737,7 @@
             ]
         },
         {
-            "description": "长按k = Hyper + k",
+            "description": "[长按]k = Hyper + k",
             "manipulators": [
                 {
                     "from": {
@@ -3777,7 +3777,7 @@
             ]
         },
         {
-            "description": "长按l = Hyper + l",
+            "description": "[长按]l = Hyper + l",
             "manipulators": [
                 {
                     "from": {
@@ -3817,7 +3817,7 @@
             ]
         },
         {
-            "description": "长按m = Hyper + m",
+            "description": "[长按]m = Hyper + m",
             "manipulators": [
                 {
                     "from": {
@@ -3857,7 +3857,7 @@
             ]
         },
         {
-            "description": "长按n = Hyper + n",
+            "description": "[长按]n = Hyper + n",
             "manipulators": [
                 {
                     "from": {
@@ -3897,7 +3897,7 @@
             ]
         },
         {
-            "description": "长按o = Hyper + o",
+            "description": "[长按]o = Hyper + o",
             "manipulators": [
                 {
                     "from": {
@@ -3937,7 +3937,7 @@
             ]
         },
         {
-            "description": "长按p = Hyper + p",
+            "description": "[长按]p = Hyper + p",
             "manipulators": [
                 {
                     "from": {
@@ -3977,7 +3977,7 @@
             ]
         },
         {
-            "description": "长按q = Hyper + q",
+            "description": "[长按]q = Hyper + q",
             "manipulators": [
                 {
                     "from": {
@@ -4017,7 +4017,7 @@
             ]
         },
         {
-            "description": "长按r = Hyper + r",
+            "description": "[长按]r = Hyper + r",
             "manipulators": [
                 {
                     "from": {
@@ -4057,7 +4057,7 @@
             ]
         },
         {
-            "description": "长按s = Hyper + s",
+            "description": "[长按]s = Hyper + s",
             "manipulators": [
                 {
                     "from": {
@@ -4097,7 +4097,7 @@
             ]
         },
         {
-            "description": "长按t = Hyper + t",
+            "description": "[长按]t = Hyper + t",
             "manipulators": [
                 {
                     "from": {
@@ -4137,7 +4137,7 @@
             ]
         },
         {
-            "description": "长按u = Hyper + u",
+            "description": "[长按]u = Hyper + u",
             "manipulators": [
                 {
                     "from": {
@@ -4177,7 +4177,7 @@
             ]
         },
         {
-            "description": "长按v = Hyper + v",
+            "description": "[长按]v = Hyper + v",
             "manipulators": [
                 {
                     "from": {
@@ -4217,7 +4217,7 @@
             ]
         },
         {
-            "description": "长按w = Hyper + w",
+            "description": "[长按]w = Hyper + w",
             "manipulators": [
                 {
                     "from": {
@@ -4257,7 +4257,7 @@
             ]
         },
         {
-            "description": "长按x = Hyper + x",
+            "description": "[长按]x = Hyper + x",
             "manipulators": [
                 {
                     "from": {
@@ -4297,7 +4297,7 @@
             ]
         },
         {
-            "description": "长按y = Hyper + y",
+            "description": "[长按]y = Hyper + y",
             "manipulators": [
                 {
                     "from": {
@@ -4337,7 +4337,7 @@
             ]
         },
         {
-            "description": "长按z = Hyper + z",
+            "description": "[长按]z = Hyper + z",
             "manipulators": [
                 {
                     "from": {

@@ -2064,7 +2064,7 @@
             ]
         },
         {
-            "description": "[其他]Del键, [left_control,shift] + Backspace  =  Del",
+            "description": "[其他]del键, [left_control,shift] + backspace  =  del",
             "manipulators": [
                 {
                     "from": {
@@ -2202,7 +2202,7 @@
             ]
         },
         {
-            "description": "[单击]Shift切换输入法",
+            "description": "[单击]shift切换输入法",
             "manipulators": [
                 {
                     "from": {
@@ -2721,7 +2721,7 @@
             ]
         },
         {
-            "description": "[长按] X,C,V => 剪切,拷贝,粘贴",
+            "description": "[长按]x,c,v = cut,copy,past",
             "manipulators": [
                 {
                     "from": {
@@ -2831,7 +2831,7 @@
             ]
         },
         {
-            "description": "[长按]空格键 = Shfit,单击映射至空格键",
+            "description": "[长按]空格键 = shfit,单击映射至空格键",
             "manipulators": [
                 {
                     "from": {

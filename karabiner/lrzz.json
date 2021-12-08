@@ -2857,7 +2857,7 @@
             ]
         },
         {
-            "description": "[长按]1 = Hyper + 1",
+            "description": "[长按]0-9,-,+,a-z = Hyper + (0-9,-,+,a-z) 保持在队尾,相同键配置可被覆盖",
             "manipulators": [
                 {
                     "from": {
@@ -2893,12 +2893,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]2 = Hyper + 2",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "2",
@@ -2933,12 +2928,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]3 = Hyper + 3",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "3",
@@ -2973,12 +2963,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]4 = Hyper + 4",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "4",
@@ -3013,12 +2998,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]5 = Hyper + 5",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "5",
@@ -3053,12 +3033,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]6 = Hyper + 6",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "6",
@@ -3093,12 +3068,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]7 = Hyper + 7",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "7",
@@ -3133,12 +3103,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]8 = Hyper + 8",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "8",
@@ -3173,12 +3138,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]9 = Hyper + 9",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "9",
@@ -3213,12 +3173,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]0 = Hyper + 0",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "0",
@@ -3253,12 +3208,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]-(hyphen) = Hyper + -(hyphen)",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "hyphen",
@@ -3293,12 +3243,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按] =(equal_sign) = Hyper + =(equal_sign)",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "equal_sign",
@@ -3333,12 +3278,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]a = Hyper + a",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "a",
@@ -3373,12 +3313,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]b = Hyper + b",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "b",
@@ -3413,12 +3348,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]c = Hyper + c",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "c",
@@ -3453,12 +3383,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]d = Hyper + d",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "d",
@@ -3493,12 +3418,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]e = Hyper + e",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "e",
@@ -3533,12 +3453,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]f = Hyper + f",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "f",
@@ -3573,12 +3488,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]g = Hyper + g",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "g",
@@ -3613,12 +3523,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]h = Hyper + h",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "h",
@@ -3653,12 +3558,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]i = Hyper + i",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "i",
@@ -3693,12 +3593,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]j = Hyper + j",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "j",
@@ -3733,12 +3628,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]k = Hyper + k",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "k",
@@ -3773,12 +3663,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]l = Hyper + l",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "l",
@@ -3813,12 +3698,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]m = Hyper + m",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "m",
@@ -3853,12 +3733,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]n = Hyper + n",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "n",
@@ -3893,12 +3768,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]o = Hyper + o",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "o",
@@ -3933,12 +3803,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]p = Hyper + p",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "p",
@@ -3973,12 +3838,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]q = Hyper + q",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "q",
@@ -4013,12 +3873,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]r = Hyper + r",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "r",
@@ -4053,12 +3908,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]s = Hyper + s",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "s",
@@ -4093,12 +3943,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]t = Hyper + t",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "t",
@@ -4133,12 +3978,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]u = Hyper + u",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "u",
@@ -4173,12 +4013,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]v = Hyper + v",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "v",
@@ -4213,12 +4048,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]w = Hyper + w",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "w",
@@ -4253,12 +4083,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]x = Hyper + x",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "x",
@@ -4293,12 +4118,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]y = Hyper + y",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "y",
@@ -4333,12 +4153,7 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "[长按]z = Hyper + z",
-            "manipulators": [
+                },
                 {
                     "from": {
                         "key_code": "z",
